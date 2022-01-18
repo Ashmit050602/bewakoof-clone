@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men Home Page</title>
+    <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/footerstyles.css">
 </head>
@@ -430,5 +431,14 @@
     import footerpart from "./components/footer.js";
 
     document.querySelector("#footer-part").innerHTML = footerpart();
+
+
+    
+    import navbar from "./components/navbar.js";
+    console.log(navbar());
+
+    document.getElementById("navbar").innerHTML=navbar()
+
+   
 
 </script>
