@@ -106,6 +106,9 @@ border: .5px solid #333;
 }#nav_search_bar>li>li
 {
     font-size: 18px;
+}#search_data
+{
+    position: absolute;
 }
 #nav_bar_manu>li>a{
     text-decoration: none;
