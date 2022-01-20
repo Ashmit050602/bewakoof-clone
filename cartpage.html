@@ -296,7 +296,7 @@
         }
 
         #cart-shown-left {
-
+            border : 1px solid red;
             height: auto;
         }
 
@@ -389,6 +389,173 @@
             font-size: 30px;
             cursor: pointer;
         }
+
+
+
+        #actual-price {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #mrp-price {
+            margin-left: 10px;
+            color: gray;
+            text-decoration: line-through;
+            font-size: 15px;
+            font-weight: normal;
+
+        }
+
+        .total-adress-page {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: visbility 0s opacity 0.5s;
+
+
+
+
+        }
+
+        .adress-overlay {
+
+
+
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            margin: auto;
+
+            padding: 1% 2%;
+            box-sizing: border-box;
+            background-color: white;
+            flex-direction: column;
+
+
+
+
+        }
+
+        .address-active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .adress-overlay input {
+
+            margin: auto;
+            width: 90%;
+            height: 5%;
+            padding: 1%;
+
+
+        }
+
+        #Save-address-flex {
+            width: 50%;
+
+            margin-left: 4%;
+
+        }
+
+        #Save-address-flex p {
+            color: gray;
+            font-size: 15px;
+            margin-bottom: 4px;
+
+        }
+
+        #Save-address-flex button {
+
+            width: 20%;
+            padding: 7px 3px;
+            border: 1px solid gray;
+            border-radius: 50px;
+            margin: 2px 2px;
+            background-color: white;
+            color: gray;
+
+        }
+
+        .saveaddress-cancel {
+
+            width: 80%;
+            margin: auto;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+
+        .saveaddress-cancel button:nth-child(1) {
+
+            width: 49%;
+            height: 100%;
+            border-radius: 5px;
+            background-color: teal;
+            color: white;
+            border: none;
+
+        }
+
+        .saveaddress-cancel button:nth-child(2) {
+
+            width: 49%;
+            height: 100%;
+            border-radius: 5px;
+            background-color: white;
+            color: gray;
+            border: 1px solid teal;
+
+        }
+
+        #city-district {
+            width: 94%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+
+
+        }
+
+        #city-district>input {
+            height: 40px;
+            width: 45%;
+            border-radius: 5px;
+            border: 1px solid gray;
+
+
+
+
+        }
+
+        #adress-close {
+
+            height: 30px;
+            width: 30px;
+            font-size: 30px;
+            color: gray;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+
+
+        }
     </style>
 </head>
 
@@ -396,15 +563,50 @@
 
 
     <div class="overlay">
-
         <div class="overlay-content">
             <p>Have a Coupon / Gift Card?</p>
             <input type="text" id="coupoun-text" placeholder="Enter code">
             <button id="coupoun-submit">APPLY</button>
             <span class="coupoun-close">&times;</span>
         </div>
+    </div>
+
+    <!-- adress page start -->
+
+
+    <div class="total-adress-page" class="overlay">
+
+        <div class="adress-overlay">
+
+            <h2>Add New Address</h2>
+            <input type="text" placeholder="name"></input>
+            <input type="text" placeholder="number"></input>
+            <input type="text" placeholder="number"></input>
+            <div id="city-district">
+                <input type="text" placeholder="City/District"></input>
+                <input type="text" placeholder="State"></input>
+            </div>
+            <input type="text" placeholder="Flatno/Building,Street name"></input>
+            <input type="text" placeholder="Area/Locality"></input>
+            <input type="text" placeholder="Landmark(optional)"></input>
+            <div id="Save-address-flex">
+                <p>Save Address As</p>
+                <button>Home</button>
+                <button>Office</button>
+                <button>Other</button>
+            </div>
+            <div class="saveaddress-cancel">
+                <button>SAVE ADDRESS</button>
+                <button>CANCEL</button>
+            </div>
+            <span id="adress-close">&times</span>
+        </div>
 
     </div>
+
+
+
+
 
     <div id="cartpage-total-div">
 
@@ -412,7 +614,7 @@
             <img src="https://images.bewakoof.com/web/bewakoof-primary-logo-white-bg-2x-1635745564.png" height="25px">
         </div>
 
-        <p id="total-items-cart">My Bag 0 items(s)</p>
+        <p id="total-items-cart">My Bag 0 item(s)</p>
         <div id="cart-append-change">
             <div id="cart-shown-images">
 
@@ -423,7 +625,9 @@
 
                     <div class="offer-div" id="left-offer-color">
 
-                        <p> <span><img src="india.png" height="10px"></span>Yay! You get FREE delivery on this order</p>
+                        <p> <span><img src="https://images.bewakoof.com/web/Red-truck.png" alt="truck"
+                                    style="width: 19px; height: 12px; animation-duration: 2s;"></span>Yay! You get FREE
+                            delivery on this order</p>
 
                     </div>
                     <div id="cart-dom-clear">
@@ -433,9 +637,9 @@
                             <div id="cart-descr-img">
                                 <div id="cart-descr">
                                     <p>Know Your Power Boyfriend T-Shirt</p>
-                                    <p>₹275</p>
+                                    <p id="actual_price">₹275 <span id="mrp-price"></span></p>
                                     <div>
-                                        <p class="green-color">You saved ₹524!</p>
+                                        <p class="green-color">You saved ₹<span id="saved-amt">526</span>!</p>
                                     </div>
 
                                     <div id="size-qty">
@@ -500,8 +704,12 @@
 
                         </div>
                         <!-- cart-push-prdt end -->
+                        
                     </div>
+                    <h1>WISH LIST</h1>
+                    <div id="wish-list-products"></div>
                 </div>
+                
                 <div id="cart-shown-right">
 
                     <div class="offer-div" id="offer-div">
@@ -577,37 +785,43 @@
     var obj = [
         {
             description: "Jet Black Round Neck 3/4th Sleeve T-Shirt",
-            price: 999,
+            subTotalPrice: 999,
+            mrpPrice: 1999,
             image: "https://images.bewakoof.com/t320/know-your-power-boyfriend-t-shirt-464873-1642404499-1.jpg",
         },
         {
 
             description: "na patta chucdu na patta chudu nattu nattu ",
-            price: 500,
+            subTotalPrice: 500,
+            mrpPrice: 1500,
             image: "https://images.bewakoof.com/t320/bunny-rabbit-pocket-round-neck-3-4-sleeves-t-shirts-women-s-printed-round-neck-3-4-sleeve-t-shirts-354975-1621409080.jpg",
         },
         {
 
             description: "na patta chucdu na patta chudu nattu nattu ",
-            price: 200,
+            subTotalPrice: 200,
+            mrpPrice: 799,
             image: "https://images.bewakoof.com/t540/jet-black-round-neck-3-4th-sleeve-t-shirt-105769-1637995851-1.jpg",
         },
 
         {
             description: "Jet Black Round Neck 3/4th Sleeve T-Shirt",
-            price: 199,
+            subTotalPrice: 199,
+            mrpPrice: 788,
             image: "https://images.bewakoof.com/t320/know-your-power-boyfriend-t-shirt-464873-1642404499-1.jpg",
         },
         {
 
             description: "na patta chucdu na patta chudu nattu nattu ",
-            price: 1999,
+            subTotalPrice: 1999,
+            mrpPrice: 2999,
             image: "https://images.bewakoof.com/t320/bunny-rabbit-pocket-round-neck-3-4-sleeves-t-shirts-women-s-printed-round-neck-3-4-sleeve-t-shirts-354975-1621409080.jpg",
         },
         {
 
             description: "na patta chucdu na patta chudu nattu nattu ",
-            price: 699,
+            subTotalPrice: 699,
+            mrpPrice: 999,
             image: "https://images.bewakoof.com/t540/jet-black-round-neck-3-4th-sleeve-t-shirt-105769-1637995851-1.jpg",
         },
 
@@ -629,16 +843,21 @@
     var array = JSON.parse(localStorage.getItem("beakoof_cart")) || [];
     console.log(array)
 
+    var saved_amount_array;
+
     display_cart(array)
     function display_cart(array) {
 
         document.querySelector("#cart-dom-clear").innerHTML = "";
 
         console.log(array)
+        saved_amount_array = [];
+
 
         array.map((n, index) => {
 
-            var { description, image, price } = n;
+
+            var { description, image, subTotalPrice, mrpPrice } = n;
             var totaldiv = document.createElement("div")
             totaldiv.id = "cart-push-prdt"
             var cart_desc_div_img = document.createElement("div");
@@ -653,12 +872,27 @@
 
             cart_img.append(image)
             var p1 = document.createElement("p");
+
             p1.textContent = description;
+
             var p2 = document.createElement("p");
-            p2.textContent = "₹" + price;
+            p2.id = "actual-price";
+            p2.textContent = "₹" + subTotalPrice;
+
+            var mrp_span = document.createElement("span");
+            mrp_span.id = "mrp-price";
+            mrp_span.textContent = "₹" + mrpPrice;
+
+            p2.textContent = "₹" + subTotalPrice;
+            p2.append(mrp_span)
+
+
             var green_div = document.createElement("div");
             var green_p = document.createElement("p");
-            green_p.textContent = "You saved ₹524!";
+            green_p.textContent = `You saved ₹${mrpPrice - subTotalPrice}!`;
+
+            saved_amount_array.push(mrpPrice - subTotalPrice);
+
             green_p.className = "green-color"
             green_div.append(green_p)
             var size_qty = document.createElement("div");
@@ -779,17 +1013,34 @@
         })
 
         var total_price = array.reduce(function (a, b) {
-            return { price: a.price + b.price };
+            return { subTotalPrice: a.subTotalPrice + b.subTotalPrice };
         })
-        console.log(total_price)
+        console.log("total", total_price)
+
+        var total_mrpPrice = array.reduce(function (a, b) {
+            return { mrpPrice: a.mrpPrice + b.mrpPrice };
+        })
+        console.log(total_mrpPrice)
 
 
-        document.querySelector(".total_calculate_price").textContent = "₹" + total_price.price;
-        total_calculate_price = total_price.price;
+        var bag_discounted_amount = 0;
+        bag_discounted_amount = saved_amount_array.reduce((m, n) => {
+            return m + n;
+        })
 
-        document.querySelector(".Subtotal").textContent = "₹" + total_price.price;
-        document.querySelector(".Grand-total-pay").textContent = "₹" + (total_price.price - 52);
 
+        document.querySelector("#saving-div").textContent = `You are saving ₹${bag_discounted_amount} on this order`
+
+        document.querySelector(".bag-discount").textContent = "₹" + bag_discounted_amount;
+        console.log(bag_discounted_amount)
+
+
+        document.querySelector(".total_calculate_price").textContent = "₹" + total_mrpPrice.mrpPrice;
+        total_calculate_price = total_price.subTotalPrice;
+
+        document.querySelector(".Subtotal").textContent = "₹" + (total_price.subTotalPrice);
+        document.querySelector(".Grand-total-pay").textContent = "₹" + (total_price.subTotalPrice);
+        // we have to modify tribe value
 
         document.querySelector("#Coupon-btn").addEventListener("click", coupountoogle)
 
@@ -810,37 +1061,74 @@
 
 
 
-    document.querySelector("#coupoun-submit").addEventListener("click", coupountoogless)
+    // document.querySelector("#coupoun-submit").addEventListener("click", coupountoogless)
 
 
 
-    function coupountoogless() {
-        var x = document.querySelector("#coupoun-text").value;
-        console.log(x)
+    // function coupountoogless() {
+    //     var x = document.querySelector("#coupoun-text").value;
+    //     console.log(x)
 
-        if (x == "NEW100") {
-
-
+    //     if (x == "NEW100") {
 
 
-            document.querySelector(".bag-discount").textContent = total_calculate_price - 551;
-            document.querySelector(".Subtotal").textContent = "₹" + document.querySelector(".bag-discount").textContent;
 
-            document.querySelector("#saving-div").textContent = `You are saving ${52 + 499} on this order`
 
-            document.querySelector(".Grand-total-pay").textContent = "₹" + document.querySelector(".bag-discount").textContent;
-            document.querySelector(".overlay").classList.toggle('bg-active')
-        }
-        else {
-            alert("invalid coupoun")
-        }
+
+
+    //         // document.querySelector(".bag-discount").textContent = total_calculate_price - 551;
+    //         // document.querySelector(".Subtotal").textContent = "₹" + document.querySelector(".bag-discount").textContent;
+
+    //         // document.querySelector("#saving-div").textContent = `You are saving ${52 + 499} on this order`
+
+    //         // document.querySelector(".Grand-total-pay").textContent = "₹" + document.querySelector(".bag-discount").textContent;
+    //         document.querySelector(".overlay").classList.toggle('bg-active')
+    //     }
+    //     else {
+    //         alert("invalid coupoun")
+    //     }
+
+
+    // }
+
+    console.log(saved_amount_array)
+    // var bag_discounted_amount = saved_amount_array.reduce((m, n) => {
+    //     return m + n;
+    // })
+
+    // document.querySelector(".bag-discount").textContent = "₹" + bag_discounted_amount;
+    // console.log(bag_discounted_amount)
+
+
+
+
+
+
+    document.querySelector("#adress-payment-btn").addEventListener("click", address_visible)
+
+    function address_visible() {
+
+        document.querySelector(".total-adress-page").classList.toggle("address-active")
+
 
 
     }
-
-
-
-
+    document.querySelector("#adress-close").addEventListener("click", function () {
+        document.querySelector(".total-adress-page").classList.toggle("address-active")
+    })
 
 
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- // we have to modify tribe value line- 796 -->

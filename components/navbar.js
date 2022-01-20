@@ -58,18 +58,6 @@ function navbar()
                     <li><a href="#">Kurtas</a></li>
 
                    </ul>
-<<<<<<< HEAD
-                   <ul>
-                    <li><a href="#">TopWear</a></li>
-                    <li><a href="#">Half Sleeve T-Shirt</a></li>
-                    <li><a href="#">Full Slave T_Shirt</a></li>
-                    <li><a href="#">Printed T-Shirt</a></li>
-                    <li><a href="#"> Plain T-Shirt</a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li>
-=======
                    <hr>
                    <ul>
                     <li><a href="#">TopWear</a></li>
@@ -85,7 +73,6 @@ function navbar()
                     <li><a href="#">Polo T-Shirt</a></li>
                     <li><a href="#">Shirts</a></li>
                     <li><a href="#">Kurtas</a></li> -->
->>>>>>> f1bdbca8a72a718d66156961c4637713e648db9e
 
                    </ul>
             
@@ -150,53 +137,6 @@ function navbar()
         <li><a href="#">MOBILE COVER</a>
             <div id="logo_sub_menu3">
                 <div id="sub_menu_item"><ul>
-<<<<<<< HEAD
-                    <li><a href="#">TopWear</a></li>
-                    <li><a href="#">Half Sleeve T-Shirt</a></li>
-                    <li><a href="#">Full Slave T_Shirt</a></li>
-                    <li><a href="#">Printed T-Shirt</a></li>
-                    <li><a href="#"> Plain T-Shirt</a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li>
-
-                   </ul>
-                   <ul>
-                    <li><a href="#">TopWear</a></li>
-                    <li><a href="#">Half Sleeve T-Shirt</a></li>
-                    <li><a href="#">Full Slave T_Shirt</a></li>
-                    <li><a href="#">Printed T-Shirt</a></li>
-                    <li><a href="#"> Plain T-Shirt</a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li>
-
-                   </ul>
-                   <ul>
-                    <li><a href="#">TopWear</a></li>
-                    <li><a href="#">Half Sleeve T-Shirt</a></li>
-                    <li><a href="#">Full Slave T_Shirt</a></li>
-                    <li><a href="#">Printed T-Shirt</a></li>
-                    <li><a href="#"> Plain T-Shirt</a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li>
-
-                   </ul>
-                   <ul>
-                    <li><a href="#">TopWear</a></li>
-                    <li><a href="#">Half Sleeve T-Shirt</a></li>
-                    <li><a href="#">Full Slave T_Shirt</a></li>
-                    <li><a href="#">Printed T-Shirt</a></li>
-                    <li><a href="#"> Plain T-Shirt</a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li>
-=======
                     <li><a href="#"><h2>POPULAR</h2></a></li>
                     <li><a href="#"><h3>Xiaomi</h3></a></li>
                     <li><a href="#">Realme 9 Power</a></li>
@@ -239,7 +179,6 @@ function navbar()
                    <ul>
                     <li><a href="#"><span></span><img src="https://images.bewakoof.com/nav_menu/bewakoof-online-fashion-COTM-mobile-cover-navigation-box-desktop-1612275399.jpg" alt=""></a></li>
                     
->>>>>>> f1bdbca8a72a718d66156961c4637713e648db9e
 
                    </ul>
                

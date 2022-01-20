@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wishlist-container{
+            width:75%;
+            border: 1px solid red;
+            margin:auto;
+            display: grid;
+            /* text-align: center; */
+            grid-template-columns:repeat(4,1fr) ; 
+            grid-gap:30px;
+        }
+        #wishlist-product{
+            line-height: 10px;
+            position:relative;
+        } 
+        .wishlist-prod-close{
+            position:absolute;
+            top:5px;
+            right:10px;
+            background-color: white;
+            height: 25px;
+            width:25px;
+            border-radius: 50%;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        } 
+        #name{
+            font-size: 15px;
+            color:grey;
+        }  
+        #wishlist-price{
+            font-weight: bold;
+            font-size: 13px;
+        }
+        p>span:nth-child(1){
+            margin:0 5px;
+            color: gray;
+            text-decoration: line-through;
+
+        }
+        p>span:nth-child(2){
+            color:seagreen;
+        }
+        div>p:nth-child(2n){
+            font-size: 12px;
+        }
+        #wishlist-product>button{
+            width:100%;
+            padding: 8px 0;
+            background-color: white;
+            border:1px solid #eee;
+            border-radius: 2px;
+        }
+        #wishlist-product>img{
+            width:100%;
+            height:70%;
+            
+        }
+        #wishlist-tribe{
+            background-color: lightgrey;
+            height:15px;
+        }
+        #wishlist-heading{
+            margin-left: 12.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <h2 id="wishlist-heading">WISH LIST</h2>
+    <div id="wishlist-container">
+        
+        <!-- <div id="wishlist-product">
+            
+        </div> -->
+
+        <!-- <div id="wishlist-product">
+            <img src="https://images.bewakoof.com/t320/better-hero-full-sleeve-t-shirt-465236-1642576149-1.jpg" alt="">
+            <p id="name">Better Hero Full Sleeve I-Shirt</p>
+            <p id="wishlist-price">₹325<span>₹999</span><span>67% OFF</span></p>
+            <p>₹299 For Tribe Members</p>
+            <button>MOVE TO BAG</button>
+        </div> -->
+    </div>
+</body>
+</html>
+<script>
+    var obj = [
+        {
+            description: "Jet Black Round Neck 3/4th Sleeve T-Shirt",
+            subTotalPrice: 999,
+            mrpPrice: 1999,
+            image: "https://images.bewakoof.com/t320/know-your-power-boyfriend-t-shirt-464873-1642404499-1.jpg",
+        },
+        {
+
+            description: "na patta chucdu na patta chudu nattu nattu ",
+            subTotalPrice: 500,
+            mrpPrice: 1500,
+            image: "https://images.bewakoof.com/t320/bunny-rabbit-pocket-round-neck-3-4-sleeves-t-shirts-women-s-printed-round-neck-3-4-sleeve-t-shirts-354975-1621409080.jpg",
+        },
+        {
+
+            description: "na patta chucdu na patta chudu nattu nattu ",
+            subTotalPrice: 200,
+            mrpPrice: 799,
+            image: "https://images.bewakoof.com/t540/jet-black-round-neck-3-4th-sleeve-t-shirt-105769-1637995851-1.jpg",
+        },
+
+        {
+            description: "Jet Black Round Neck 3/4th Sleeve T-Shirt",
+            subTotalPrice: 199,
+            mrpPrice: 788,
+            image: "https://images.bewakoof.com/t320/know-your-power-boyfriend-t-shirt-464873-1642404499-1.jpg",
+        },
+        {
+
+            description: "na patta chucdu na patta chudu nattu nattu ",
+            subTotalPrice: 1999,
+            mrpPrice: 2999,
+            image: "https://images.bewakoof.com/t320/bunny-rabbit-pocket-round-neck-3-4-sleeves-t-shirts-women-s-printed-round-neck-3-4-sleeve-t-shirts-354975-1621409080.jpg",
+        },
+        {
+
+            description: "na patta chucdu na patta chudu nattu nattu ",
+            subTotalPrice: 699,
+            mrpPrice: 999,
+            image: "https://images.bewakoof.com/t540/jet-black-round-neck-3-4th-sleeve-t-shirt-105769-1637995851-1.jpg",
+        },
+
+    ]
+
+localStorage.setItem("bewkoof_wishlist", JSON.stringify(obj));
+
+var wishlist_data = JSON.parse(localStorage.getItem("bewkoof_wishlist"));
+console.log(wishlist_data);
+
+display_wishlist_product(wishlist_data);
+
+function display_wishlist_product(){
+    
+    document.getElementById("wishlist-container").innerHTML = "";
+
+    wishlist_data.map(function(elem,index){
+    var wishlistContainer = document.getElementById("wishlist-container");
+    var wishlistProduct = document.createElement("div");
+    wishlistProduct.id="wishlist-product";
+    // wishlistProduct.innerHTML=`
+    
+    //         <img src=${elem.image} alt="">
+    //         <p id="name">${elem.description}</p>
+    //         <p id="wishlist-price">₹${elem.subTotalPrice}<span>₹999</span><span>67% OFF</span></p>
+    //         <p id="wishlist-tribe">₹299 For Tribe Members</p>
+    //         <button>MOVE TO BAG</button>
+    //         <span class="wishlist-prod-close">&times;</span>
+    
+    // `;
+
+    var img = document.createElement("img");
+    var p1 = document.createElement("p");
+    var p2=document.createElement("p");
+    var span1 = document.createElement("span");
+    var span2 = document.createElement("span");
+    var p3 = document.createElement("p");
+    var btn = document.createElement("button");
+    var span3 = document.createElement("span");
+
+    img.src = elem.image;
+    p1.textContent = elem.description;
+    p1.id="name";
+    p2.innerHTML =`${elem.subTotalPrice}<span>₹999</span><span>67% OFF</span>`;
+    p2.id = "wishlist-price";
+    p3.textContent = "₹299 For Tribe Members";
+    p3.id="wishlist-tribe";
+    btn.innerHTML='MOVE TO BAG';
+    span3.innerHTML= "&times;";
+    span3.className ="wishlist-prod-close";
+
+    wishlistProduct.append(img , p1 ,p2,p3,btn , span3);
+
+    wishlistContainer.append(wishlistProduct);
+
+    span3.addEventListener("click",function(){
+    console.log("here" , index);
+
+    wishlist_data.splice(index,1);
+    console.log(wishlist_data);
+    localStorage.setItem("bewkoof_wishlist", JSON.stringify(wishlist_data));
+
+    display_wishlist_product(wishlist_data);
+
+    })
+
+})
+
+};
+
+
+
+
+
+
+</script>
