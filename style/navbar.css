@@ -3,7 +3,7 @@
 margin: 0px;
 padding: 0px;
 }
-#nav_bar_container
+#navbar
 {
     position: fixed;
   
@@ -162,4 +162,10 @@ visibility: visible;
 }#logo_sub_menu1
 {
     margin-right: 30%;
+}
+
+#nav_search_bar_fetchData{
+    width: 340px;
+    position: fixed;
+    background-color: white;
 }
