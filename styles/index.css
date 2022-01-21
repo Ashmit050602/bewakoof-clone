@@ -2,6 +2,9 @@ body{
     margin:0;
     font-family: "montserrat", sans-serif;
 }
+#margin-top-slider1{
+    height: 150px;
+}
 #slider1{
     display:flex;
     /* border:2px solid red; */

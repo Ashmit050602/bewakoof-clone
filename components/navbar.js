@@ -1,6 +1,6 @@
 function navbar()
 {
-    return `   <div id="nav_bar_top">
+    return ` <div id="nav_bar_top">
     <div id="nav_bar_top_left">
     <li><a href="#">Offers</a></li>
     <li><a href="#">Fanbook</a></li>
@@ -188,7 +188,8 @@ function navbar()
         
     </div>
     <div id="nav_search_bar">
-         <li><input type="text" id="search_product_by_name" placeholder="search by product,category or collection"></li>
+         <li><input type="text" id="search_product_by_name" placeholder="search by product,category or collection">
+         <div id = "nav_search_bar_fetchData"></div></li>
         <li><a href="#">Login</a></li>
         <li><a href="#"><span><i class="far fa-heart"></i></span></a></li>
         <li><a href="#"><span><i class="fas fa-lock"></i></span></a></li>
