@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment</title>
     <link rel="stylesheet" href="./payment.css" />
+    <link rel="stylesheet" href="./style/spinner.css"/>
   </head>
   <body>
     <div id="payment-navbar">
@@ -217,4 +218,17 @@ paymentUpiButton.addEventListener("click", ()=>{
         document.getElementById("payment-upi").style.display = "none";
         document.getElementById("payment-wallet").style.display = "none";
     });
+    document.getElementById("card-pay-now-button").addEventListener("click" , function(){
+
+      var person = prompt("Please enter your OTP", "");
+      if(person == "1234"){
+    alert("We are processing your payment !");
+    window.location.href = "./paymentsuccesspage.html";
+}
+      else{
+    alert("Wrong OTP, Try Again");
+}  
+});
+
+   
 </script>

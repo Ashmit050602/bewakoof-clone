@@ -22,7 +22,7 @@
     color: black;
 }.Number_of_Cat_item_and_name
 {
-margin-top: 30px;
+margin-top: 60px;
 display: flex;
 justify-content: space-between;
 }
@@ -126,3 +126,9 @@ padding: 16px 0px 16px;
 {
     visibility: visible;
 }
+
+#sortPrice{
+    margin-top: 10px;
+}
+
+#nav_bar_manu{display: none}

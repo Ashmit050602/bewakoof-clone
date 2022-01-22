@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men Home Page</title>
+    <title>Women Home Page</title>
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/footerstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <div id="navbar"></div>
+    <div id = "margin-top-slider1"></div>
     <!-- Main Content -->
     <div id="main">
         <!-- Carousel 1 -->
@@ -105,45 +107,45 @@
         <h2 id="main-popular-h2">POPULAR CATEGORIES</h2>
         <div id="main-categories">
 
-            <div>
+            <div id="Boyfriend-Tshirts">
                 <img src="https://images.bewakoof.com/uploads/grid/app/Boyfriend-Tshirt-1636611095.jpg" alt="">
                 <a href="">
                     <h3>Boyfriend-Tshirts</h3>
                 </a>
             </div>
-            <div>
+            <div id="full-sleve-tshirt">
                 <img src="https://images.bewakoof.com/uploads/grid/app/Sweatshirt-1-1636611096.jpg" alt="">
                 <a href="">
                     <h3>full sleeve t shirt</h3>
                 </a>
             </div>
-            <div>
+            <div id="sleeve-tshirt">
                 <img src="https://images.bewakoof.com/uploads/grid/app/3-4-Sleeve-T-Shirts-1637299441.jpg" alt="">
                 <a href="">
                     <h3>3/3 4 Sleeve TShirts</h3>
                 </a>
             </div>
-            <div>
+            <div id="sweater-hoddies">
                 <img src="https://images.bewakoof.com/uploads/grid/app/Sweatshirt-1636611096.jpg" alt="">
                 <a href="">
                     <h3>Sweatshirt & Hoddies</h3>
                 </a>
             </div>
 
-            <div>
+            <div id="woman-jackets">
                 <img src="https://images.bewakoof.com/uploads/grid/app/Jacket-1636611096.jpg" alt="">
                 <a href="">
                     <h3>Jackets</h3>
                 </a>
             </div>
-            <div>
+            <div id="woman-denims">
                 <img src="https://images.bewakoof.com/uploads/grid/app/bottom-nav-bootm-wear--0007-jeans-women-1636611095.jpg"
                     alt="">
                 <a href="">
                     <h3>Denims</h3>
                 </a>
             </div>
-            <div>
+            <div id="woman-joggers">
                 <img src="https://images.bewakoof.com/uploads/grid/app/bottom-nav-bootm-wear--0005-joggers-women-1636611094.jpg"
                     alt="">
                 <a href="">
@@ -151,28 +153,28 @@
                 </a>
             </div>
 
-            <div>
+            <div id="woman-shorts">
                 <img src="https://images.bewakoof.com/uploads/grid/app/bottom-nav-bootm-wear--0000-shorts-women-1637299475.jpg"
                     alt="">
                 <a href="">
                     <h3>shorts</h3>
                 </a>
             </div>
-            <div>
+            <div id="woman-boxers">
                 <img src="https://images.bewakoof.com/uploads/grid/app/bottom-nav-bootm-wear--0010-boxers-women-1637299475.jpg"
                     alt="">
                 <a href="">
                     <h3> Boxers</h3>
                 </a>
             </div>
-            <div>
+            <div id="woman-pyjama">
                 <img src="https://images.bewakoof.com/uploads/grid/app/bottom-nav-bootm-wear--0010-boxers-women-1637299475.jpg"
                     alt="">
                 <a href="">
                     <h3>Pyjamas</h3>
                 </a>
             </div>
-            <div>
+            <div id="woman-pants">
                 <img src="https://images.bewakoof.com/uploads/grid/app/Category-Box-Sweaters-Women-1641193419.jpg"
                     alt="">
                 <a href="">
@@ -3308,6 +3310,7 @@ sweaters: [
     ]
 }
 input_search.addEventListener("input", ()=>{
+    
     document.getElementById("nav_search_bar_fetchData").style.border = "none";
     document.getElementById("nav_search_bar_fetchData").innerHTML = "";
         for(var x in data1){
@@ -3318,7 +3321,6 @@ input_search.addEventListener("input", ()=>{
     }
     }
     })
-
     function displaySearchBar(arr){
         document.getElementById("nav_search_bar_fetchData").style.border = "1px solid black";
         // document.getElementById("nav_search_bar_fetchData").innerHTML = "";
@@ -3333,9 +3335,79 @@ input_search.addEventListener("input", ()=>{
             div.style.padding = "10px";
             document.getElementById("nav_search_bar_fetchData").append(div, hr);
             div.addEventListener("click", ()=>{
-                localStorage.setItem("bewakoof_cart", JSON.stringify(arr));
+                localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+                window.location.href = "./product.html"
             })
-        })        
+        })
+        
     }
 
+   
+    document.getElementById("Boyfriend-Tshirts").addEventListener("click", ()=>{
+        let arr = data1["woman shirts"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+
+    document.getElementById("full-sleve-tshirt").addEventListener("click", ()=>{
+        let arr = data1["woman full sleeve tshirt"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+
+    document.getElementById("sleeve-tshirt").addEventListener("click", ()=>{
+        let arr = data1["woman sleeve tshirt"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+
+    document.getElementById("sweater-hoddies").addEventListener("click", ()=>{
+        let arr = data1["woman hoodie sweatshirt"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+    document.getElementById("woman-jackets").addEventListener("click", ()=>{
+        let arr = data1["woman jackets"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+    document.getElementById("woman-denims").addEventListener("click", ()=>{
+        let arr = data1["woman denims"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+    document.getElementById("woman-joggers").addEventListener("click", ()=>{
+        let arr = data1["woman joggers"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+    document.getElementById("woman-shorts").addEventListener("click", ()=>{
+        let arr = data1["woman shorts"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+    document.getElementById("woman-boxers").addEventListener("click", ()=>{
+        let arr = data1["woman boxer"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+    document.getElementById("woman-pyjama").addEventListener("click", ()=>{
+        let arr = data1["woman pyjamas"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+    document.getElementById("woman-pants").addEventListener("click", ()=>{
+        let arr = data1["woman pyjamas"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+    document.getElementById("woman-pants").addEventListener("click", ()=>{
+        let arr = data1["woman pyjamas"];
+        localStorage.setItem("bewakoof_products", JSON.stringify(arr));
+        window.location.href = "./product.html"
+    })
+
+    
+    
+   
 </script>

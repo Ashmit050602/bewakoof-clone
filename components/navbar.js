@@ -19,62 +19,58 @@ function navbar()
 <div id="nav_bar_search">
     <div id="logo_menu">
       
-        <li><a href="#"><img src="https://images.bewakoof.com/web/bewakoof-primary-logo-white-bg-2x-1635745564.png" alt="logo"></a></li>
+        <li><a href="./index.html"><img src="https://images.bewakoof.com/web/bewakoof-primary-logo-white-bg-2x-1635745564.png" alt="logo"></a></li>
         <li><a href="#">MEN</a>
          <div id="logo_sub_menu1">
              <div id="sub_menu_item"><ul>
-                 <li><a href="#">TopWear</a></li>
-                 <li><a href="#">Half Sleeve T-Shirt</a></li>
-                 <li><a href="#">Full Slave T_Shirt</a></li>
-                 <li><a href="#">Printed T-Shirt</a></li>
-                 <li><a href="#"> Plain T-Shirt</a></li>
-                 <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                 <li><a href="#">Polo T-Shirt</a></li>
-                 <li><a href="#">Shirts</a></li>
-                 <li><a href="#">Kurtas</a></li>
+             <li><a href="#"><h5>TopWear</h5></a></li>
+             <li><a href="#">Half Sleeve T-Shirt</a></li>
+             <li><a href="#">Full Slave T_Shirt</a></li>
+             <li><a href="#">Printed T-Shirt</a></li>
+             <li><a href="#"> Plain T-Shirt</a></li>
+             <li><a href="#">Vest</a></li><li><a href="#"></a></li>
+             <li><a href="#">Polo T-Shirt</a></li>
+             <li><a href="#">Shirts</a></li>
+             <li><a href="#">Kurtas</a></li>
 
-                </ul>
-                <ul>
-                    <li><a href="#">TopWear</a></li>
-                    <li><a href="#">Half Sleeve T-Shirt</a></li>
-                    <li><a href="#">Full Slave T_Shirt</a></li>
-                    <li><a href="#">Printed T-Shirt</a></li>
-                    <li><a href="#"> Plain T-Shirt</a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><H5>Bottomwear</H5></a></li>
+                <li><a href="#">Pyjmas</a></li>
+                <li><a href="#">Boxers</a></li>
+                <li><a href="#">Sorts</a></li>
+                <li><a href="#"> Pnats</a></li>
+                <li><a href="#">Jeans</a></li><li><a href="#"></a></li>
+                <li><a href="#">Joggers</a></li>
+                <li><a href="#">Plus Size Store</a></li>
+                <li><a href="#">bRIEFS</a></li>
 
-                   </ul>
-                   <ul>
-                    <li><a href="#">TopWear</a></li>
-                    <li><a href="#">Half Sleeve T-Shirt</a></li>
-                    <li><a href="#">Full Slave T_Shirt</a></li>
-                    <li><a href="#">Printed T-Shirt</a></li>
-                    <li><a href="#"> Plain T-Shirt</a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li>
+               </ul>
+               <ul>
+                <li><a href="#"><H5>Ethnic Fusion Wear</H5></a></li>
+                <li><a href="#">Kurtans</a></li>
+                <li><a href="#">Neharu Jackets</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"> <h5>Reginal</h5></a></li>
+                <li><a href="#">Marati T-Shirt</a></li><li><a href="#"></a></li>
+                <li><a href="#">Bengali T-Shirt</a></li>
+                <li><a href="#">Gujrati T-Shirt</a></li>
+                <li><a href="#">Tamil T-Shirt</a></li>
 
-                   </ul>
-                   <hr>
-                   <ul>
-                    <li><a href="#">TopWear</a></li>
-                    <li><a href="#"><img src="https://images.bewakoof.com/t320/sacrifice-2-0-round-neck-vest-364859-1638211709-1.jpg" alt=""> ftrdcvhtrfdv</a></li>
-                    <li><a href="#"><img src="https://images.bewakoof.com/t320/sacrifice-2-0-round-neck-vest-364859-1638211709-1.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="https://images.bewakoof.com/t320/sacrifice-2-0-round-neck-vest-364859-1638211709-1.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="https://images.bewakoof.com/t320/sacrifice-2-0-round-neck-vest-364859-1638211709-1.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="https://images.bewakoof.com/t320/sacrifice-2-0-round-neck-vest-364859-1638211709-1.jpg" alt=""></a></li>
-                    <!-- <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"> <img src="" alt=""></a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li> -->
+               </ul>
+               <hr>
+               <ul class="top_category">
+               
+               
+                <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/Anime-Bewakoof-Homepage-NavigationCircleIcon-final-1632292125.jpg" alt=""><span>Amine Collection</span></a></li>
+                <li><a href="#"><https://images.bewakoof.com/nav_menu/WinterWear-Bewakoof-Homepage-NavigationCircleIcon-1630653435.png" alt=""><span>Winter Collection</span></a></li>
+                <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/navi-collab-icon-1579514101.gif" alt=""><span>Collebration</span></a></li>
+                <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/nav-icon-1617643368.png" alt=""><span>Shop Unique Brands</span></a></li>
+                <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/new-arrival-icon-1625237098.png" alt=""><span>Upcomming Collection</span></a></li>
+                <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/bewakoof-men-logo-last-size-1592822253.png" alt=""><span>Last Size Left</span></a></li>
+               
 
-                   </ul>
+               </ul>
             
             </div>
               
@@ -83,51 +79,49 @@ function navbar()
         <li><a href="#">WOMEN</a>
             <div id="logo_sub_menu2">
                 <div id="sub_menu_item"><ul>
-                    <li><a href="#">x</a></li>
-                    <li><a href="#">Half Sleeve T-Shirt</a></li>
-                    <li><a href="#">Full Slave T_Shirt</a></li>
-                    <li><a href="#">Printed T-Shirt</a></li>
-                    <li><a href="#"> Plain T-Shirt</a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li>
+                <li><a href="#"><h5>TopWear</h5></a></li>
+                <li><a href="#">Half Sleeve T-Shirt</a></li>
+                <li><a href="#">Full Slave T_Shirt</a></li>
+                <li><a href="#">Printed T-Shirt</a></li>
+                <li><a href="#"> Kurties</a></li>
+                <li><a href="#">Vest</a></li><li><a href="#"></a></li>
+                <li><a href="#">Polo T-Shirt</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Kurtas</a></li>
 
                    </ul>
                    <ul>
-                    <li><a href="#">TopWear</a></li>
-                    <li><a href="#">Half Sleeve T-Shirt</a></li>
-                    <li><a href="#">Full Slave T_Shirt</a></li>
-                    <li><a href="#">Printed T-Shirt</a></li>
-                    <li><a href="#"> Plain T-Shirt</a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li>
+                   <li><a href="#"><H5>Ethnic Fusion Wear</H5></a></li>
+                   <li><a href="#">Kurtans</a></li>
+                   <li><a href="#">Neharu Jackets</a></li>
+                   <li><a href="#"></a></li>
+                   <li><a href="#"> <h5>Reginal</h5></a></li>
+                   <li><a href="#">Marati T-Shirt</a></li><li><a href="#"></a></li>
+                   <li><a href="#">Bengali T-Shirt</a></li>
+                   <li><a href="#">Gujrati T-Shirt</a></li>
+                   <li><a href="#">Tamil T-Shirt</a></li>
 
                    </ul>
                    <ul>
-                    <li><a href="#">TopWear</a></li>
-                    <li><a href="#">Half Sleeve T-Shirt</a></li>
-                    <li><a href="#">Full Slave T_Shirt</a></li>
-                    <li><a href="#">Printed T-Shirt</a></li>
-                    <li><a href="#"> Plain T-Shirt</a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li>
+                   <li><a href="#"><H5>Ethnic Fusion Wear</H5></a></li>
+                   <li><a href="#">Kurtans</a></li>
+                   <li><a href="#">Neharu Jackets</a></li>
+                   <li><a href="#"></a></li>
+                   <li><a href="#"> <h5>Reginal</h5></a></li>
+                   <li><a href="#">Marati T-Shirt</a></li><li><a href="#"></a></li>
+                   <li><a href="#">Bengali T-Shirt</a></li>
+                   <li><a href="#">Gujrati T-Shirt</a></li>
+                   <li><a href="#">Tamil T-Shirt</a></li>
 
                    </ul>
-                   <ul>
-                    <li><a href="#">TopWear</a></li>
-                    <li><a href="#">Half Sleeve T-Shirt</a></li>
-                    <li><a href="#">Full Slave T_Shirt</a></li>
-                    <li><a href="#">Printed T-Shirt</a></li>
-                    <li><a href="#"> Plain T-Shirt</a></li>
-                    <li><a href="#">Vest</a></li><li><a href="#"></a></li>
-                    <li><a href="#">Polo T-Shirt</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Kurtas</a></li>
+                   <ul class="top_category">
+                   <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/Anime-Bewakoof-Homepage-NavigationCircleIcon-final-1632292125.jpg" alt=""><span>Amine Collection</span></a></li>
+                   <li><a href="#"><https://images.bewakoof.com/nav_menu/WinterWear-Bewakoof-Homepage-NavigationCircleIcon-1630653435.png" alt=""><span>Winter Collection</span></a></li>
+                   <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/navi-collab-icon-1579514101.gif" alt=""><span>Collebration</span></a></li>
+                   <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/nav-icon-1617643368.png" alt=""><span>Shop Unique Brands</span></a></li>
+                   <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/new-arrival-icon-1625237098.png" alt=""><span>Upcomming Collection</span></a></li>
+                   <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/bewakoof-men-logo-last-size-1592822253.png" alt=""><span>Last Size Left</span></a></li>
+                  
 
                    </ul>
                
@@ -190,17 +184,17 @@ function navbar()
     <div id="nav_search_bar">
          <li><input type="text" id="search_product_by_name" placeholder="search by product,category or collection">
          <div id = "nav_search_bar_fetchData"></div></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#"><span><i class="far fa-heart"></i></span></a></li>
-        <li><a href="#"><span><i class="fas fa-lock"></i></span></a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./wishlist.html"><span><i class="far fa-heart"></i></span></a></li>
+        <li><a href="./cartpage.html"><span><i class="fas fa-cart-plus"></i><sup id="items"></sup></span></a></li>
     </div>
     
 </div>
 <hr>
 <div id="nav_bar_manu">
-    <li><a href="#"><P>MEN</P></a></li>
-    <li><a href="#"><P>WOMEN</P></a></li>
-    <li><a href="#"><P>ACCESSORIES</P></a></li>
+    <li><a href="./index.html"><P>MEN</P></a></li>
+    <li><a href="./index-women.html"><P>WOMEN</P></a></li>
+    <li><a href="./index-accesories.html"><P>ACCESSORIES</P></a></li>
 </div>
 `
 }

@@ -68,7 +68,7 @@ function footerpart() {
         </div>
         <!-- customer-section-grid end -->
 
-        <hr>
+         <hr>
         <!-- footer second section starts here -->
         <div class="customer-section-grid" id="customer-section-grid">
 

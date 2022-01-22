@@ -1,9 +1,16 @@
-#footer-part {
+*{
+    line-height: 12px;
+}
 
+
+#footer-part {
+    line-height: 20px;
+    padding: 5% 0;
     width: 100%;
     height: auto;
     background-color: black;
     color: white;
+    font-family: "montserrat", sans-serif;
 }
 
 #customer-section {
@@ -148,6 +155,41 @@ color: rgba(255, 255, 255, 0.9);
 
     }
 
+
+
+}
+h1{
+    margin-bottom: 2%;
+}
+p{
+    line-height: 20px;
+    font-size: 16px;
+    font-family: "montserrat", sans-serif;
+}
+h4{
+    line-height: 20px;
+}
+#customer-section hr{
+    /* border: 1px solid red;
+    background-color: blue; */
+    margin: 4% 0;
+}
+.last-color-section>h4{
+    line-height:20Px ;
+    /* border:2px solid rgb(74,172,143); */
+    padding:5px 0;
+    
+}
+.last-color-section>h4>a{
+    color:rgb(74,172,143);
+    font-weight: bold;
+
+}
+#footer-last-section-para p{
+    /* border:2px solid white; */
+    line-height: 25px;
+    font-size: 18px;
+    margin:2% 0;
 
 
 }
