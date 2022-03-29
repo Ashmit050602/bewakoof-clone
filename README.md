@@ -29,6 +29,12 @@ Functionality to make a payment
 Added booking success display functionality
 Implemented all the above said functionalities using LocalStorage, and enhanced dynamic flow of all data
 
+## Tech-Stack
+HTML
+CSS
+JS DOM
+LocalStorage
+
 ## Team Members
 <ul>
   <li>Magendran</li>
